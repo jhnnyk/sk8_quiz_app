@@ -14,6 +14,7 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/sk8.png',
             width: 400,
+            color: const Color.fromARGB(200, 0, 0, 0),
           ),
           const Text(
             'Learn about skateboarding the dumb way!',
