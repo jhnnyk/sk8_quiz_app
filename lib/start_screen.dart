@@ -19,14 +19,12 @@ class StartScreen extends StatelessWidget {
             'Learn about skateboarding the dumb way!',
             style: TextStyle(fontSize: 16),
           ),
-          const SizedBox(
-            height: 14,
-          ),
+          const SizedBox(height: 14),
           ElevatedButton.icon(
             onPressed: startQuiz,
             icon: const Icon(Icons.arrow_right_alt),
             label: const Text('Start Quiz'),
-          )
+          ),
         ],
       ),
     );
