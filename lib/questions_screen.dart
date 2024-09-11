@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sk8_quiz_app/answer_button.dart';
 
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key});
@@ -13,27 +14,31 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(context) {
     return SizedBox(
-      // as an alternative to the Center widget 
+      // as an alternative to the Center widget
       // you can use SizedBox and set the width
-      width: double.infinity, 
+      // then set the mainAxisAlignment on the column
+      width: double.infinity,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text('The question...'),
+          const Text(
+            'The question...',
+            style: TextStyle(fontSize: 20),
+          ),
           const SizedBox(
             height: 30,
           ),
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text('Answer 1'),
+          AnswerButton(
+            answerText: 'answerText',
+            onTap: () {},
           ),
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text('Answer 2'),
+          AnswerButton(
+            answerText: 'answerText 2',
+            onTap: () {},
           ),
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text('Answer 3'),
+          AnswerButton(
+            answerText: 'answerText 3',
+            onTap: () {},
           ),
         ],
       ),
